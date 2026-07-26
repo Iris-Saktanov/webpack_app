@@ -8,3 +8,4 @@ devServer
 React JSX
 css scss loader
 MiniCssExtractPlugin
+Decomposition webpack.config.ts
