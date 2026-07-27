@@ -18,12 +18,12 @@ export function buildPlugins({ mode, paths }: BuildOptions): Configuration['plug
         plugins.push(new webpack.ProgressPlugin())
     }
 
-    if (isProd) [
+    if (isProd) {
         plugins.push(new MiniCssExtractPlugin({
             filename: 'css/[name].[contenthash:8].css',
             chunkFilename: 'css/[name].[contenthash:8].css'
         }))
-    ]
+    }
 
     return plugins
 }
