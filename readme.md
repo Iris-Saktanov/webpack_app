@@ -10,3 +10,4 @@ css scss loader
 MiniCssExtractPlugin
 Decomposition webpack.config.ts
 css modules
+react router dom, bundle analyzer
