@@ -1,9 +1,8 @@
-import path from 'node:path';
 import { App } from './components/App'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { About } from './pages/about/index'
-import { Shop } from './pages/shop/index'
+import { About } from '@/pages/about/index'
+import { Shop } from '@/pages/shop/index'
 import { Suspense } from 'react';
 
 const root = createRoot(document.getElementById('root'))
