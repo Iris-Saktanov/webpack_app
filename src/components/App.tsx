@@ -1,6 +1,10 @@
 import { useState } from "react"
 import classes from './App.module.scss'
 import { Outlet, Link } from "react-router-dom"
+import exampleJpg from '@/assets/example.jpeg'
+import examplePng from '@/assets/example.png'
+import ExampleSvg from '@/assets/example.svg'
+
 
 
 export const App = () => {
@@ -8,6 +12,11 @@ export const App = () => {
 
     return (
         <div>
+            <div>
+                <img src={exampleJpg} alt="" />
+                <img width={400} height={600} src={examplePng} alt="" />
+                <ExampleSvg width={300} height={300} />
+            </div>
             <Link to="/about">about</Link>
             <br />
             <Link to="/shop">shop</Link>
