@@ -10,8 +10,17 @@ import ExampleSvg from '@/assets/example.svg'
 export const App = () => {
     const [count, setCount] = useState<number>(0)
 
+    if (__PLATFORM__ === 'mobile') {
+        return <div>MOBLIE</div>
+    }
+
+    if (__PLATFORM__ === 'desktop') {
+        return <div>DESKTOP</div>
+    }
+
     return (
         <div>
+            <h1>Platform = {__PLATFORM__}</h1>
             <div>
                 <img src={exampleJpg} alt="" />
                 <img width={400} height={600} src={examplePng} alt="" />

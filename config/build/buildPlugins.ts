@@ -5,7 +5,7 @@ import { type Configuration } from "webpack";
 import { type BuildOptions } from "./types/types";
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 
-export function buildPlugins({ mode, paths, analyzer }: BuildOptions): Configuration['plugins'] {
+export function buildPlugins({ mode, paths, analyzer, platform }: BuildOptions): Configuration['plugins'] {
     const isProd = mode === 'production'
     const isDev = mode === 'development'
 
@@ -13,6 +13,10 @@ export function buildPlugins({ mode, paths, analyzer }: BuildOptions): Configura
         new HtmlWebpackPlugin(
             { template: paths.html },
         ),
+        new webpack.DefinePlugin({
+            __PLATFORM__: JSON.stringify(platform),
+            __ENV__: JSON.stringify(mode)
+        })
     ]
 
     if (isDev) {
