@@ -14,3 +14,4 @@ react router dom, bundle analyzer
 alias
 assets
 global env, tree shaking
+fork ts checker plugin
