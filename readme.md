@@ -15,3 +15,4 @@ alias
 assets
 global env, tree shaking
 fork ts checker plugin
+hot module replacement

@@ -16,6 +16,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.2",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^26.1.1",
     "@types/webpack-bundle-analyzer": "^4.7.0",
@@ -24,6 +25,8 @@
     "fork-ts-checker-webpack-plugin": "^9.1.0",
     "html-webpack-plugin": "^5.6.7",
     "mini-css-extract-plugin": "^2.10.2",
+    "react-refresh": "^0.18.0",
+    "react-refresh-typescript": "^2.0.12",
     "sass": "^1.102.0",
     "sass-loader": "^17.0.0",
     "style-loader": "^4.0.0",
@@ -33,7 +36,7 @@
     "webpack": "^5.109.0",
     "webpack-bundle-analyzer": "^5.3.1",
     "webpack-cli": "^7.2.1",
-    "webpack-dev-server": "^6.0.0"
+    "webpack-dev-server": "^5.2.6"
   },
   "dependencies": {
     "@types/react": "^19.2.17",
