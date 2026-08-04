@@ -20,7 +20,7 @@ export const App = () => {
 
     return (
         <div>
-            <h1 style={{ color: 'green' }}>Platform = {__PLATFORM__}</h1>
+            <h1 data-testid={"data-test-platform"} style={{ color: 'green' }}>Platform = {__PLATFORM__}</h1>
             <div>
                 <img src={exampleJpg} alt="" />
                 <img width={400} height={600} src={examplePng} alt="" />
